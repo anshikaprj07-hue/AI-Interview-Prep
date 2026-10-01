@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Preparation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Home Screen -->
+    <div id="home-screen" class="card">
+
+        <h1>🤖 AI Interview Preparation Tool</h1>
+
+        <p>
+            Practice programming interview questions and improve your skills.
+        </p>
+
+        <div class="form-group">
+            <label>Select Subject</label>
+
+            <select id="subject">
+                <option value="C">C Programming</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="DSA">DSA</option>
+            </select>
+        </div>
+
+        <button id="start-btn">Start Quiz</button>
+
+    </div>
+
+    <!-- Quiz Screen -->
+
+    <div id="quiz-screen" class="card hidden">
+
+        <div class="top-bar">
+            <div>Score: <span id="score">0</span></div>
+            <div>Question <span id="question-number">1</span>/5</div>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div id="answer-buttons" class="answer-buttons"></div>
+
+        <div id="feedback"></div>
+
+        <button id="next-btn" class="hidden">
+            Next Question
+        </button>
+
+    </div>
+
+    <!-- Result Screen -->
+
+    <div id="result-screen" class="card hidden">
+
+        <h1>🎉 Quiz Completed</h1>
+
+        <h2 id="final-score"></h2>
+
+        <h3 id="percentage"></h3>
+
+        <button id="restart-btn">
+            Restart Quiz
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
